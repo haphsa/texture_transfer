@@ -21,7 +21,7 @@ def transfer_texture(obj_path, texture_path):
     material = trimesh.visual.texture.SimpleMaterial(image=im)
     color_visuals = trimesh.visual.TextureVisuals(uv=uv, image=im, material=material)
     mesh.visual = color_visuals
-    mesh.export(file_obj='model3.obj')
+    mesh.export(file_obj='ouputobj.glb')
 
     mesh.show()
     return 
